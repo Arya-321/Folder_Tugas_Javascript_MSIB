@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5 Javascipt </title>
+</head>
+
+<body bgcolor="lightblue">
+    <div id="style1" style="float: center">
+       <img src="Contents/IMG/26eddab3d5cf8cd66affd349cfc0945f.jpg" width="40%" alt="" id="Logo">
+       <img src="Contents/IMG/Operato1.jpg" width="35%" alt="" id="Picture1">
+       <img src="Contents/IMG/maxresdefault.jpg" width="35%" alt="" id="Picture2">
+       <img src="Contents/IMG/SeekPng.com_anime-character-png_1699250.png" width="35%" alt="" id="Picture3">
+       <img src="Contents/IMG/SeekPng.com_rainbow-png_3035400.png" width="35%" alt="" id="Picture4"><br>
+       <button id="Home">Home</button>
+       <button id="About">About</button>
+       <button id="Show_Contents">Show Contents</button>
+       <button id="Hide_Contents">HideContents</button>
+    </div>
+    
+    <script src="Contents/JS/jquery-3.6.4.js"></script>
+
+    <script>
+         $(document).ready(function () {
+            $('#Picture1').css('display', 'none');
+            $('#Picture2').css('display', 'none');
+            $('#Picture3').css('display', 'none');
+            $('#Picture4').css('display', 'none');
+            $('#Logo').click(function () {
+                $('#logo').hide(250);
+                $('#Picture1').slideDown(250);
+                $('#Picture2').slideDown(250);
+                $('#Picture3').slideDown(250);
+                $('#Picture4').slideDown(250);
+            });
+
+            $('#Picture1').click(function () {
+                $('#Picture1').hide(250);
+            });
+
+            $('Picture2').click(function () {
+                $('Picture2').hide(250);
+            });
+
+            $('#Picture3').click(function () {
+                $('#Picture3').hide(250);
+            });
+
+            $('#Picture4').click(function () {
+                $('#Picture4').hide(250);
+            });
+
+            $('#Home').click(function () {
+                $('#Logo').slideDown(250);
+                $('#Picture1').hide(250);
+                $('#Picture2').hide(250);
+                $('#Picture3').hide(250);
+                $('#Picture4').hide(250);
+            });
+
+            $('#About').click(function () {
+                $('#Logo').hide(250);
+                $('#Picture1').slideDown(250);
+                $('#Picture2').slideDown(250);
+                $('#Picture3').slideDown(250);
+                $('#Picture4').slideDown(250);
+            });
+
+            $('#Show_Contents').click(function () {
+                $('#Logo').hide(250);
+                $('#Picture1').slideDown(250);
+                $('#Picture2').slideDown(250);
+                $('#Picture3').slideDown(250);
+                $('#Picture4').slideDown(250);
+            });
+
+
+            $('#Hide_Contents').click(function () {
+                $('#Logo').hide(250);
+                $('#Picture1').hide(250);
+                $('#Picture2').hide(250);
+                $('#Picture3').hide(250);
+                $('#Picture4').hide(250);
+            });
+        });
+
+    </script>
+</body>
+</html>
